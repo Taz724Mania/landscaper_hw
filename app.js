@@ -1,9 +1,26 @@
 // You are starting a landscaping business, but all you have are your teeth.
 // Using just your teeth, you can spend the day cutting lawns and make $1. You can do this as much as you want.
 
-let money = 0;
-let currentTool = 'teeth';
+const player= (
+    money: 0
+    tool: 0
+    win: false
+)
 
+const tools = [
+    (name: 'teeth', earns: 5, costs: 0)
+    (name: 'rustyScissors', earns: 5, costs: 5)
+    (name: 'pushMower', earns: 50, costs: 25)
+    (name: 'batteryMower', earns: 100, costs: 250)
+    (name: 'starvingStudents', earns: 250, costs: 500)
+]
 
-function cutLawns() {
+function cutLawn() {
+    const tool = tools[player.tool]
+    alert(`you cut a lawn with ${tool.name} and made ${tool.earns} dollars.`)
+    player.money += tool.earns
+}
 
+function upgrade() {
+    const = upgradedTool = tools[player.tool++]
+}
