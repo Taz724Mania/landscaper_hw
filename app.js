@@ -1,12 +1,6 @@
 // You are starting a landscaping business, but all you have are your teeth.
 // Using just your teeth, you can spend the day cutting lawns and make $1. You can do this as much as you want.
 
-const player = {
-    money: 0,
-    tool: 0,
-    win: false
-}
-
 const tools = [
     {name: 'teeth', earns: 1, costs: 0,},
     {name: 'rustyScissors', earns: 5, costs: 5},
@@ -14,6 +8,12 @@ const tools = [
     {name: 'batteryMower', earns: 100, costs: 250},
     {name: 'starvingStudents', earns: 250, costs: 500}
 ]
+
+const player = {
+    money: 0,
+    tool: 0,
+    win: false
+}
 
 function cutLawn() {
     const tool = tools[player.tool]
@@ -42,8 +42,8 @@ function winning() {
     }
 
 
-while (player.won) {
-    prompt(`You have ${player.money} dollars, would you like to mow some lawns or upgrade your tool?`)
+while (!player.won) {
+  const prompt(`You have ${player.money} dollars, would you like to mow some lawns or upgrade your tool?`)
 
     if (response === 'mow lawns')
         cutLawn()
@@ -53,5 +53,5 @@ while (player.won) {
     upgrade()
     }
 
-    winning()
-}
+}    
+winning()
