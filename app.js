@@ -40,4 +40,18 @@ function winning() {
         alert('YOU WIN!')
         player.won = true
     }
+
+
+while (player.won) {
+    prompt(`You have ${player.money} dollars, would you like to mow some lawns or upgrade your tool?`)
+
+    if (response === 'mow lawns')
+        cutLawn()
+    }
+
+    if (response === 'upgrade'){
+    upgrade()
+    }
+
+    winning()
 }
