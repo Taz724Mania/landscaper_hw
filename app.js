@@ -34,3 +34,10 @@ function upgrade() {
         alert('You have upgraded to the best tool available')
     }
 }
+
+function winning() {
+    if (player.tool = tools.length-- && player.money >= 1000) {
+        alert('YOU WIN!')
+        player.won = true
+    }
+}
