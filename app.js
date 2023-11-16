@@ -22,5 +22,15 @@ function cutLawn() {
 }
 
 function upgrade() {
-    const = upgradedTool = tools[player.tool++]
+    if (player.tool++ < tools.length) {
+    const upgradedTool = tools[player.tool++]
+    if (upgradedTool.costs < player.money) {
+        player.money -= upgradedTool.costs
+        player.tool++
+        } else {
+            alert('You do not have enough for this')
+        }
+     } else {
+        alert('You have upgraded to the best tool available')
+    }
 }
