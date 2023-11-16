@@ -19,3 +19,59 @@ function cutLawns() {
 
   updateDisplay();
 }
+
+function buyRustyScissors() {
+    if (money >= 5) {
+        alert('You have enough money to upgrade your tool.')
+        prompt('Would you like to upgrade your tool?')
+            if (response === 'yes'){
+                money -= 5;
+                currentTool = 'rustyScissors';
+            }
+      
+      updateDisplay();
+    }
+  }
+
+  function buyOldTimeyPushLawnmower() {
+    if (money >= 25 && currentTool === 'rustyScissors') {
+        alert('You have enough money to upgrade your tool.')
+        prompt('Would you like to upgrade your tool?')  
+            if (response === 'yes'){
+            money -= 25;
+            currentTool = 'OldTimeyPushLawnmower';
+        }
+      updateDisplay();
+    }
+  }
+
+  function buyFancyBatteryPoweredLawnmower() {
+    if (money >= 250 && currentTool === 'oldTimeyPushLawnmower') {
+        alert('You have enough money to upgrade your tool.')
+        prompt('Would you like to upgrade your tool?')  
+            if (response === 'yes'){
+                money -= 250;
+                currentTool = 'fancyBatteryPoweredLawnmower';
+
+      updateDisplay();
+    }
+  }
+}
+
+function hireTeamOfStarvingStudents() {
+    if (money >= 500 && currentTool === 'fancyBatteryPoweredLawnmower') {
+        alert('You have enough money to upgrade your tool.')
+        prompt('Would you like to upgrade your tool?')  
+            if (response === 'yes'){
+                money -= 500;
+                currentTool = 'teamOfStarvingStudents';
+      updateDisplay();
+    }
+  }
+}
+  
+  function checkWinCondition() {
+    if (currentTool === 'teamOfStarvingStudents' && money >= 1000) {
+      alert('Congratulations! You have won the game!');
+    }
+  }
