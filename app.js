@@ -7,6 +7,15 @@ let currentTool = 'teeth';
 function cutLawns() {
   if (currentTool === 'teeth') {
     money += 1;
-  }  } else if (currentTool === 'rustyScissors') {
+  } else if (currentTool === 'rustyScissors') {
     money += 5;
+  } else if (currentTool === 'oldTimeyPushLawnmower') {
+    money += 50;
+  } else if (currentTool === 'fancyBatteryPoweredLawnmower') {
+    money += 100;
+  } else if (currentTool === 'teamOfStarvingStudents') {
+    money += 250;
+  }
+
+  updateDisplay();
 }
