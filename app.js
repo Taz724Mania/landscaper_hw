@@ -8,10 +8,10 @@ const player = {
 }
 
 const tools = [
-    {name: 'teeth', earns: 5, costs: 0}
-    {name: 'rustyScissors', earns: 5, costs: 5}
-    {name: 'pushMower', earns: 50, costs: 25}
-    {name: 'batteryMower', earns: 100, costs: 250}
+    {name: 'teeth', earns: 1, costs: 0,},
+    {name: 'rustyScissors', earns: 5, costs: 5},
+    {name: 'pushMower', earns: 50, costs: 25},
+    {name: 'batteryMower', earns: 100, costs: 250},
     {name: 'starvingStudents', earns: 250, costs: 500}
 ]
 
