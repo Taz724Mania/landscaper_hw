@@ -1,11 +1,11 @@
 // You are starting a landscaping business, but all you have are your teeth.
 // Using just your teeth, you can spend the day cutting lawns and make $1. You can do this as much as you want.
 
-const player= (
-    money: 0
-    tool: 0
+const player = {
+    money: 0,
+    tool: 0,
     win: false
-)
+}
 
 const tools = [
     (name: 'teeth', earns: 5, costs: 0)
